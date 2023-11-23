@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "TokenType.h"
-
-struct Token{
+#include "Pos.h"
+typedef struct{
     TokenTypes tokenType;
     char * value;
-    int startPos;
-    int endPos;
-};
+    Pos startPos;
+    Pos endPos;
+}Token;
 
 int main(){
 
